@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <Property name="LOG_PATH">logs</Property>
+    </Properties>
+
+    <Appenders>
+        <!-- Console output -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%highlight{%p}] %d{HH:mm:ss.SSS} [%t] [%c{1}] (%X{testName} | %X{browser}) - %msg%n"/>
+        </Console>
+
+        <!-- Rolling file output -->
+        <RollingFile name="FileLogger"
+                     fileName="${LOG_PATH}/framework.log"
+                     filePattern="${LOG_PATH}/framework-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="[%p] %d{yyyy-MM-dd HH:mm:ss} [%t] [%c{1}] (%X{testName} | %X{browser}) - %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="20"/>
+        </RollingFile>
+    </Appenders>
+
+    <!-- AsyncRoot improves performance -->
+    <Loggers>
+        <AsyncRoot level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileLogger"/>
+        </AsyncRoot>
+    </Loggers>
+</Configuration>
