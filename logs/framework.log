@@ -1,17 +1,12 @@
-[INFO] 2025-11-06 11:38:37 [main] [WebDriverManager] ( | ) - Using msedgedriver 142.0.3595.53 (resolved driver for Edge 142)
-[INFO] 2025-11-06 11:38:37 [main] [Downloader] ( | ) - Downloading https://msedgewebdriverstorage.blob.core.windows.net/edgewebdriver/142.0.3595.53/edgedriver_win64.zip
-[INFO] 2025-11-06 11:38:48 [main] [Downloader] ( | ) - Extracting driver from compressed file edgedriver_win64.zip
-[INFO] 2025-11-06 11:38:48 [main] [WebDriverManager] ( | ) - Exporting webdriver.edge.driver as C:\Users\fpt\.cache\selenium\msedgedriver\win64\142.0.3595.53\msedgedriver.exe
-[INFO] 2025-11-06 14:15:35 [main] [WebDriverManager] ( | ) - Using msedgedriver 142.0.3595.53 (resolved driver for Edge 142)
-[INFO] 2025-11-06 14:15:35 [main] [WebDriverManager] ( | ) - Exporting webdriver.edge.driver as C:\Users\fpt\.cache\selenium\msedgedriver\win64\142.0.3595.53\msedgedriver.exe
-[INFO] 2025-11-06 14:15:42 [main] [UIActions] ( | ) - Open URL:  https://demo.growcrm.io/login
-[INFO] 2025-11-06 14:15:42 [main] [UIActions] ( | ) - Set text admin@example.com on element By.id: email
-[INFO] 2025-11-06 14:15:43 [main] [UIActions] ( | ) - Set text growcrm on element By.id: password
-[INFO] 2025-11-06 14:15:44 [main] [UIActions] ( | ) - Click on element By.id: loginSubmitButton
-[ERROR] 2025-11-06 14:15:54 [main] [WaitActions] ( | ) - Timeout waiting for the element Visible. By.id: main-top-nav-bar
-[INFO] 2025-11-06 14:21:55 [main] [WebDriverManager] ( | ) - Using msedgedriver 142.0.3595.53 (resolved driver for Edge 142)
-[INFO] 2025-11-06 14:21:55 [main] [WebDriverManager] ( | ) - Exporting webdriver.edge.driver as C:\Users\fpt\.cache\selenium\msedgedriver\win64\142.0.3595.53\msedgedriver.exe
-[INFO] 2025-11-06 14:22:01 [main] [UIActions] ( | ) - Open URL:  https://demo.growcrm.io/login
-[INFO] 2025-11-06 14:22:02 [main] [UIActions] ( | ) - Set text admin@example.com on element By.id: email
-[INFO] 2025-11-06 14:22:02 [main] [UIActions] ( | ) - Set text growcrm on element By.id: password
-[INFO] 2025-11-06 14:22:03 [main] [UIActions] ( | ) - Click on element By.id: loginSubmitButton
+[INFO] 2025-11-13 17:01:51 [main] [WebDriverManager] ( | ) - Using msedgedriver 142.0.3595.76 (resolved driver for Edge 142)
+[INFO] 2025-11-13 17:01:51 [main] [Downloader] ( | ) - Downloading https://msedgewebdriverstorage.blob.core.windows.net/edgewebdriver/142.0.3595.76/edgedriver_win64.zip
+[INFO] 2025-11-13 17:02:10 [main] [Downloader] ( | ) - Extracting driver from compressed file edgedriver_win64.zip
+[INFO] 2025-11-13 17:02:10 [main] [WebDriverManager] ( | ) - Exporting webdriver.edge.driver as C:\Users\fpt\.cache\selenium\msedgedriver\win64\142.0.3595.76\msedgedriver.exe
+[INFO] 2025-11-13 17:02:15 [main] [UIActions] ( | ) - Open URL:  https://demo.growcrm.io/login
+[INFO] 2025-11-13 17:02:16 [main] [UIActions] ( | ) - Set text admin@example.com on element By.id: email
+[INFO] 2025-11-13 17:02:17 [main] [UIActions] ( | ) - Set text growcrm on element By.id: password
+[INFO] 2025-11-13 17:02:18 [main] [UIActions] ( | ) - Click on element By.id: loginSubmitButton
+[INFO] 2025-11-13 17:13:24 [main] [UIActions] ( | ) - Open URL:  https://demo.growcrm.io/login
+[INFO] 2025-11-13 17:13:24 [main] [UIActions] ( | ) - Set text admin@example.com on element By.id: email
+[INFO] 2025-11-13 17:13:25 [main] [UIActions] ( | ) - Set text growcrm on element By.id: password
+[INFO] 2025-11-13 17:13:26 [main] [UIActions] ( | ) - Click on element By.id: loginSubmitButton

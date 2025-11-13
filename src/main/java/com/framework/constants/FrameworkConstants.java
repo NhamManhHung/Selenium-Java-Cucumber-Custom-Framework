@@ -7,7 +7,8 @@ public final class FrameworkConstants {
     }
 
     //public static final String HEADLESS = PropertiesHelpers.getValue("HEADLESS");
-    public static final String HEADLESS = "false";
+    public static final String HEADLESS = "true";
     //public static final String BROWSER = PropertiesHelpers.getValue("BROWSER");
     public static final String BROWSER = "edge";
+    //public static final String BROWSER = "chrome";
 }
