@@ -1,32 +1,31 @@
 name: Run Selenium Tests
 
-# Khi nào chạy?
 on:
   push:
-    branches: [ "main" ]   # mỗi khi có push lên nhánh main
+    branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]   # hoặc khi tạo PR
+    branches: [ "main" ]
 
 jobs:
   build:
-    runs-on: ubuntu-latest   # GitHub cấp sẵn 1 máy ảo Ubuntu
+    runs-on: ubuntu-latest
 
     steps:
-      # 1. Lấy code từ repo
+      # 1. Get Repo
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Cài đặt JDK
+      # 2. Install JDK
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '17'
 
-      # 3. Build project (compile + tải dependencies)
+      # 3. Build project
       - name: Build with Maven
         run: mvn clean install -DskipTests
 
-      # 4. Chạy test
+      # 4. Run test
       - name: Run Selenium Tests
         run: mvn test
